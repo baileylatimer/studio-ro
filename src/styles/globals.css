@@ -2,6 +2,7 @@
 
 :root {
   --color-contrast-higher: #000;
+  --font-base: 20px;
 }
 
 h1 {
@@ -15,6 +16,7 @@ h3 {
 }
 a {
   @apply text-blue-600;
+  font-size: var(--font-base);
 }
 
 
@@ -34,7 +36,9 @@ a {
 }
 
 body, h1, h2, h3, h4, h5, h6, a, li, p, span {
-  font-family: var(--font-primary)
+  font-family: var(--font-primary);
+  text-transform: uppercase;
+  color: var(--color-contrast-higher)
 }
 
 /* HEADER 
