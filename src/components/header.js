@@ -25,7 +25,7 @@ function Header({ siteTitle }) {
       <div className="block lg:hidden">
         <button
           onClick={() => toggleExpansion(!isExpanded)}
-          className="flex items-center px-3 py-2 border  rounded "
+          className="flex items-center px-3 py-2 "
         >
           <svg
             className="w-7 h-7 fill-current"
