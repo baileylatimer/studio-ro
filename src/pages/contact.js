@@ -13,9 +13,9 @@ const ContactPage = () => (
   <Layout>
     <SEO title="Contact" />
     <PageHeader title="Contact"/>
-<div className="contact">
+<div className="contact flex flex-col justify-center items-center pb-40 pt-40">
   <a tel="+1 (858) 776-8431">+1 (858) 776-8431</a>
-  <a></a>
+  <a mailto="hello@rocio.dance">hello@rocio.dance</a>
 </div>
 
   </Layout>
