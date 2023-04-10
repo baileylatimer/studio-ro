@@ -132,4 +132,15 @@ footer p {
 ============== */
 .home-about .content {
   max-width: 700px;
+  text-indent: 3.3rem;
+  position: relative;
+}
+
+.blurb__svg {
+  position: absolute;
+  top: .1em;
+  left: 0;
+  width: 1.8rem;
+  height: 1.8rem;
+  fill: currentColor;
 }
