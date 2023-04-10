@@ -181,8 +181,8 @@ li {
     margin-top: 40px
   }
   nav a {
-    font-size: var(--text-lg);
-    margin-bottom: 64px
+    font-size: var(--text-md);
+    margin-bottom: 30px
   }
 }
 
