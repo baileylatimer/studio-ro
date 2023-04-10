@@ -18,14 +18,6 @@ const IndexPage = () => (
       <source src={HeroVideo} type="video/mp4" />
     </video> */}
 
-    <div style={{ maxWidth: `300px`, marginBottom: `1.45rem` }}>
-      <StaticImage
-        src="../images/gatsby-astronaut.png"
-        alt="gatsby astronaut"
-      />
-    </div>
-    <p><Link to="/page-2/">Go to page 2</Link></p>
-    <p><Link to="/using-typescript/">Go to "Using TypeScript"</Link></p>
   </Layout>
 )
 

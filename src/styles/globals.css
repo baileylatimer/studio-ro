@@ -73,6 +73,22 @@ nav {
   top: 0
 }
 
+footer {
+  border-top: 1px solid var(--color-contrast-higher);
+  position: relative;
+}
+footer p {
+  font-size: var(--font-base);
+}
+
+.logo {
+  width: 100%;
+  height: auto;
+  position: absolute;
+  bottom: -300px;
+}
+
+
 /* HERO 
 =========== */
 .hero {
