@@ -22,7 +22,7 @@ function Header({ siteTitle }) {
       </Link>
 
       </div>
-      <div className="block lg:hidden px-d ">
+      <div className="block lg:hidden ">
         <button
           onClick={() => toggleExpansion(!isExpanded)}
           className="flex items-center px-3 py-2 "
@@ -40,7 +40,7 @@ function Header({ siteTitle }) {
       <div
         className={`${
           isExpanded ? `block` : `hidden`
-        } w-full nav-open block lg:flex lg:items-center lg:w-auto mt-4 pt-4 px-d `}
+        } w-full nav-open block lg:flex lg:items-center lg:w-auto mt-4 pt-4 lg:mt-0 lg:pt-0 px-d `}
       >
         <div className="text-sm">
           <Link
