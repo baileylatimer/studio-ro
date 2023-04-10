@@ -70,6 +70,7 @@ nav {
   position: fixed;
   width: calc(100vw - 80px);
   z-index: 99;
+  top: 0
 }
 
 /* HERO 
