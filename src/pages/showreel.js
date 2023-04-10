@@ -14,6 +14,8 @@ import Img3 from "../images/img--03.jpg"
 import Img4 from "../images/img--04.jpg"
 import Heels from "../videos/heels.mp4"
 import HipHop from "../videos/hip-hop.mp4"
+import Heels2 from "../videos/heels-2.mp4"
+import HipHop2 from "../videos/hip-hop-2.mp4"
 
 const ShowreelPage = () => (
   <Layout>
@@ -21,8 +23,8 @@ const ShowreelPage = () => (
 <PageHeader title="Showreel"/>
 
 <div className="flex flex-col lg:flex-row  lg:mt-20">
-  <ProjectCard video={Heels} title="21 questions" desc="50 Cent" cover={Img1}/>
-  <ProjectCard video={HipHop} title="Can I" desc="Drake" cover={Img2}/>
+  <ProjectCard video={Heels2} title="21 questions" desc="50 Cent" cover={Img1}/>
+  <ProjectCard video={HipHop2} title="Can I" desc="Drake" cover={Img2}/>
 </div>
 <div className="flex flex-col lg:flex-row">
   <ProjectCard video={HipHop} title="Titi Mi Pregunto" desc="Bad Bunny" cover={Img3}/>
