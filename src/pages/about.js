@@ -7,6 +7,7 @@ import SEO from "../components/seo"
 
 import PageHeader from "../components/page-header"
 import TextCard from "../components/text-card"
+import ContactBanner from "../components/contact-banner"
 
 import HeroVideo from "../videos/hero.mp4"
 
@@ -19,6 +20,7 @@ const AboutPage = () => (
       <TextCard text="STUDIO–RO is an award-winning dance practice working across a mix of disciplines that includes Heels, Hip hop, ballet, & Flaminco."/>
       <TextCard text="Rocio Colomer Jorda has 15 years of dance experience. With influences from her home country of Spain, she now teaches in San Diego, CA."/>
     </div>
+    <ContactBanner/>
   </Layout>
 )
 

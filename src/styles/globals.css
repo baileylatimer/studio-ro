@@ -176,3 +176,30 @@ footer p {
   top: 1.3rem;
   left: 1rem;
 }
+
+/* ABOUT
+============ */
+.marquee {
+  width: 100%;
+  overflow: hidden;
+  white-space: nowrap;
+  border-bottom: 1px solid var(--color-contrast-higher);
+}
+
+.marquee h1, .marquee svg {
+  display: inline-block;
+  padding-left: 100%;
+  animation: marquee 30s linear infinite;
+  -webkit-animation: marquee 30s linear infinite;
+}
+
+@keyframes marquee {
+  0% { transform: translate(0, 0); }
+  100% { transform: translate(-100%, 0); }
+}
+
+.blurb__svg-2 {
+  width: 1.8rem;
+  height: 1.8rem;
+  fill: currentColor;
+}
