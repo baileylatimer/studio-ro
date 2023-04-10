@@ -13,6 +13,11 @@ const ContactPage = () => (
   <Layout>
     <SEO title="Contact" />
     <PageHeader title="Contact"/>
+<div className="contact">
+  <a tel="+1 (858) 776-8431">+1 (858) 776-8431</a>
+  <a></a>
+</div>
+
   </Layout>
 )
 
