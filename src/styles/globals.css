@@ -19,7 +19,9 @@ a {
   font-size: var(--font-base);
 }
 
-
+.font-base {
+  font-size: var(--font-base);
+}
 
 
 @tailwind components;

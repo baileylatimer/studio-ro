@@ -1,6 +1,8 @@
 import { Link } from "gatsby"
 import PropTypes from "prop-types"
 import React, { useState } from "react"
+import Timezone from './date'
+import Timezone2 from './date-2'
 
 function Header({ siteTitle }) {
   const [isExpanded, toggleExpansion] = useState(false)
@@ -33,9 +35,9 @@ function Header({ siteTitle }) {
       <div
         className={`${
           isExpanded ? `block` : `hidden`
-        } w-full block flex-grow lg:flex lg:items-center lg:w-auto`}
+        } w-full block lg:flex lg:items-center lg:w-auto`}
       >
-        <div className="text-sm lg:flex-grow">
+        <div className="text-sm">
           <Link
             to={`/showreel`}
             className="block mt-4 mr-4 lg:inline-block lg:mt-0 "
@@ -54,9 +56,14 @@ function Header({ siteTitle }) {
           >
             Contact
           </Link>
+          
         </div>
         <div>
         </div>
+      </div>
+      <div className="hidden lg:flex font-base">
+        <Timezone />
+        <Timezone2 />
       </div>
     </nav>
   )
