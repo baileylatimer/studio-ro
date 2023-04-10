@@ -18,7 +18,7 @@ const ShowreelPage = () => (
     <SEO title="Showreel" />
 <PageHeader title="Showreel"/>
 
-<div className="flex flex-col lg:flex-row mt-20">
+<div className="flex flex-col lg:flex-row  lg:mt-20">
   <ProjectCard title="21 questions" desc="50 Cent" cover={Img1}/>
   <ProjectCard title="Can I" desc="Drake" cover={Img2}/>
 </div>
