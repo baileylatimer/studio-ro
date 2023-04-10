@@ -315,6 +315,9 @@ li {
 .project-card img {
   object-fit: cover;
 }
+.video-container {
+  width: calc(100vw/2);
+}
 
 .text-card {
   border: 1px solid var(--color-contrast-higher);

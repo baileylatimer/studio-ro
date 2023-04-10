@@ -1,8 +1,7 @@
 import React from "react"
-import Video from "../videos/hero-vid.mp4"
 
-const BackgroundVideo = () => {
-  return (
+
+const BackgroundVideo= props => (
     <video
       className="background-video"
       autoPlay
@@ -11,9 +10,8 @@ const BackgroundVideo = () => {
       playsInline
 
     >
-      <source src={Video} type="video/mp4" />
+      <source src={props.video} type="video/mp4" />
     </video>
-  )
-}
+ );
 
 export default BackgroundVideo

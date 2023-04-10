@@ -1,9 +1,10 @@
 import React from "react"
 import BackgroundVideo from "./bg-video"
+import Video from "../videos/hero-vid.mp4"
 const Hero = props => (
   
 <div class="hero">
-<BackgroundVideo />
+<BackgroundVideo video={Video}/>
 <div className="overlay-bottom"></div>
 <h1 className="text-xxl text-white ro">RO</h1>
 <h1 className="text-xxl text-white cio">CIO</h1>
