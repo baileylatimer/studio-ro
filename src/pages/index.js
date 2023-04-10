@@ -27,10 +27,10 @@ const IndexPage = () => (
   <ProjectCard title="Heels" desc="01" url="showreel" cover={Img1}/>
   <ProjectCard title="Hip hop" desc="02" url="showreel" cover={Img2}/>
 </div>
-<div className="flex flex-col lg:flex-row">
+{/* <div className="flex flex-col lg:flex-row">
   <ProjectCard title="Ballet" desc="03" url="showreel" cover={Img3}/>
   <ProjectCard title="Flaminco" desc="04" url="showreel" cover={Img4}/>
-</div>
+</div> */}
 
   </Layout>
 )
