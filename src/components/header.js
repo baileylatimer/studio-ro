@@ -4,6 +4,7 @@ import React, { useState } from "react"
 import Timezone from './date'
 import Timezone2 from './date-2'
 
+
 function Header({ siteTitle }) {
   const [isExpanded, toggleExpansion] = useState(false)
 
@@ -22,7 +23,7 @@ function Header({ siteTitle }) {
       </Link>
 
       </div>
-      <div className="block lg:hidden px-d ">
+      <div className="block lg:hidden ">
         <button
           onClick={() => toggleExpansion(!isExpanded)}
           className="flex items-center px-3 py-2 "
