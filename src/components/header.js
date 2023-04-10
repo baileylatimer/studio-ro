@@ -23,7 +23,7 @@ function Header({ siteTitle }) {
       </Link>
 
       </div>
-      <div className="block lg:hidden ">
+      <div className="block lg:hidden px-d">
         <button
           onClick={() => toggleExpansion(!isExpanded)}
           className="flex items-center px-3 py-2 "
