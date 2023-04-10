@@ -22,6 +22,9 @@ a {
 .font-base {
   font-size: var(--font-base);
 }
+.text-xxl {
+  font-size: 282px;
+}
 
 
 @tailwind components;
@@ -52,5 +55,29 @@ nav {
   -moz-border-radius: 16px;
   -ms-border-radius: 16px;
   -o-border-radius: 16px;
-  margin: 20px 40px 
+  margin: 20px 40px;
+  position: fixed;
+  width: calc(100vw - 80px);
+  z-index: 99;
+}
+
+/* HERO 
+=========== */
+.hero {
+  background-color: #000;
+  height: 100vh;
+  display: block;
+  position: relative;
+}
+
+.ro {
+  position: absolute;
+  top: 240px;
+  left:40px;
+}
+
+.cio {
+  position: absolute;
+  bottom: 160px;
+  right:40px;
 }

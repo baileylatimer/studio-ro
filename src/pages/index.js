@@ -5,12 +5,18 @@ import { StaticImage } from "gatsby-plugin-image"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 
+import Hero from "../components/hero"
+import HeroVideo from "../videos/hero.mp4"
+
 const IndexPage = () => (
   <Layout>
     <SEO title="Home" />
-    <h1>Hi people</h1>
-    <p>Welcome to your new Gatsby site.</p>
-    <p>Now go build something great.</p>
+    <Hero />
+
+    {/* <video autoplay  loop playsinline>
+      <source src={HeroVideo} type="video/mp4" />
+    </video> */}
+
     <div style={{ maxWidth: `300px`, marginBottom: `1.45rem` }}>
       <StaticImage
         src="../images/gatsby-astronaut.png"
