@@ -24,12 +24,12 @@ const IndexPage = () => (
       <source src={HeroVideo} type="video/mp4" />
     </video> */}
 <div className="flex flex-col lg:flex-row">
-  <ProjectCard title="Heels" desc="01" url="/showreels" cover={Img1}/>
-  <ProjectCard title="Hip hop" desc="02" url="/showreels" cover={Img2}/>
+  <ProjectCard title="Heels" desc="01" url="showreel" cover={Img1}/>
+  <ProjectCard title="Hip hop" desc="02" url="showreel" cover={Img2}/>
 </div>
 <div className="flex flex-col lg:flex-row">
-  <ProjectCard title="Ballet" desc="03" url="/showreels" cover={Img3}/>
-  <ProjectCard title="Flaminco" desc="04" url="/showreels" cover={Img4}/>
+  <ProjectCard title="Ballet" desc="03" url="showreel" cover={Img3}/>
+  <ProjectCard title="Flaminco" desc="04" url="showreel" cover={Img4}/>
 </div>
 
   </Layout>

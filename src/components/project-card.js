@@ -8,7 +8,7 @@ import { StaticImage } from "gatsby-plugin-image"
 const ProjectCard = props => (
   
     <li className={props.classes + " reveal-fx reveal-fx--translate-up"}>
-      <Link className=" project-card" to={ "/work/" + props.url}>
+      <Link className=" project-card" to={props.url}>
         <StaticImage src="../images/img--01.jpg" alt={props.title} objectFit="cover" width="2000" />
           <div class="flex flex-col lg:flex-row justify-between my-4 mx-4">
               <h1 class="">{props.title}</h1>
