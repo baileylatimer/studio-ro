@@ -1,10 +1,21 @@
 @tailwind base;
 
+@tailwind components;
+@tailwind utilities;
+
 :root {
   --color-contrast-higher: #000;
   --font-base: 20px;
   --text-lg: 64px;
   --text-md: 49px;
+}
+
+@media(max-width:1023px) {
+  :root {
+    --font-base: 13px;
+    --text-lg: 42px;
+    --text-md: 26px;
+  }
 }
 
 h1 {
@@ -16,11 +27,21 @@ h2 {
   font-size: 40px;
   line-height: 40px;
 }
+@media(max-width:1023px) {
+h2 {
+  @apply text-xl;
+  font-size: 28px;
+  line-height: 28px;
+}
+}
 h3 {
   @apply text-lg;
 }
 a {
   @apply text-blue-600;
+  font-size: var(--font-base);
+}
+p {
   font-size: var(--font-base);
 }
 
@@ -29,6 +50,11 @@ a {
 }
 .text-xxl {
   font-size: 282px;
+}
+@media(max-width:1023px) {
+  .text-xxl {
+    font-size: 72px;
+  }
 }
 
 .text-lg {
@@ -39,9 +65,25 @@ a {
   margin-left: 40px;
   margin-right: 40px;
 }
+@media(max-width:1023px) {
+  .mx-d {
+    margin-left: 20px;
+    margin-right: 20px;
+  } 
+}
 
-@tailwind components;
-@tailwind utilities;
+.px-d {
+  padding-left: 40px !important;
+  padding-right: 40px !important;
+}
+@media(max-width:1023px) {
+  .px-d {
+    padding-left: 20px !important;
+    padding-right: 20px !important;
+  } 
+}
+
+
 
 
 @font-face {
@@ -73,6 +115,12 @@ nav {
   width: calc(100vw - 80px);
   z-index: 99;
   top: 0
+}
+
+@media(max-width:1023px) {
+nav {
+  width: calc(100vw - 60px);
+}
 }
 
 footer {
@@ -115,11 +163,19 @@ footer p {
   top: 240px;
   left:40px;
 }
+@media(max-width:1023px) {
+  .ro {
+    position: absolute;
+    top: 180px;
+    left:20px;
+  }
+}
+
 
 .cio {
   position: absolute;
-  bottom: 140px;
-  right:40px;
+  bottom: 220px;
+  right:20px;
 }
 
 .hero-desc {
@@ -128,18 +184,31 @@ footer p {
   left:40px;
   max-width: 360px;
 }
+@media(max-width:1023px) {
+.hero-desc {
+  position: absolute;
+  bottom: 40px;
+  left:20px;
+  max-width: 360px;
+}
+}
 
 /* HOME ABOUT 
 ============== */
 .home-about .content {
   max-width: 700px;
-  text-indent: 3.3rem;
   position: relative;
 }
 
 .text-indent {
   text-indent: 3.3rem;
   position: relative;
+}
+@media(max-width:1023px) {
+.text-indent {
+  text-indent: 2.3rem;
+  position: relative;
+}
 }
 
 .blurb__svg {
@@ -149,6 +218,16 @@ footer p {
   width: 1.8rem;
   height: 1.8rem;
   fill: currentColor;
+}
+@media(max-width:1023px) {
+.blurb__svg {
+  position: absolute;
+  top: .1em;
+  left: 0;
+  width: 1.4rem;
+  height: 1.4rem;
+  fill: currentColor;
+}
 }
 
 /* CARDS
