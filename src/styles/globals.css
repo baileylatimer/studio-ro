@@ -315,8 +315,14 @@ li {
 .project-card img {
   object-fit: cover;
 }
+
 .video-container {
   width: calc(100vw/2);
+}
+@media(max-width:1023px) {
+.video-container {
+  width: calc(100vw);
+}
 }
 
 .text-card {
