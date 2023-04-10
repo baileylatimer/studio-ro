@@ -78,6 +78,13 @@ nav {
 
 .cio {
   position: absolute;
-  bottom: 160px;
+  bottom: 140px;
   right:40px;
+}
+
+.hero-desc {
+  position: absolute;
+  bottom: 40px;
+  left:40px;
+  max-width: 360px;
 }
