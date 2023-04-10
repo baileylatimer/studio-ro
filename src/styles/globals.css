@@ -137,6 +137,11 @@ footer p {
   position: relative;
 }
 
+.text-indent {
+  text-indent: 3.3rem;
+  position: relative;
+}
+
 .blurb__svg {
   position: absolute;
   top: .1em;
@@ -156,4 +161,18 @@ footer p {
 }
 .project-card img {
   object-fit: cover;
+}
+
+.text-card {
+  border: 1px solid var(--color-contrast-higher);
+  border-left: 0;
+  display: block;
+  width: 100%;
+  position: relative;
+}
+
+
+.text-card .blurb__svg {
+  top: 1.3rem;
+  left: 1rem;
 }
