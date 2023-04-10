@@ -156,6 +156,12 @@ footer p {
   bottom: -300px;
 }
 
+@media(max-width:1023px) {
+  .logo {
+    bottom: -115px;
+  }
+}
+
 ::selection {
   background-color: var(--color-contrast-higher);
   color: var(--color-bg)
