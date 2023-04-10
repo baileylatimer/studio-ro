@@ -6,8 +6,14 @@ import Layout from "../components/layout"
 import SEO from "../components/seo"
 
 import Hero from "../components/hero"
+import ProjectCard from "../components/project-card"
 import HomeAbout from "../components/home-about"
 import HeroVideo from "../videos/hero.mp4"
+
+import Img1 from "../images/img--01.jpg"
+import Img2 from "../images/img--02.jpg"
+import Img3 from "../images/img--03.jpg"
+import Img4 from "../images/img--04.jpg"
 
 const IndexPage = () => (
   <Layout>
@@ -17,6 +23,14 @@ const IndexPage = () => (
     {/* <video autoplay  loop playsinline>
       <source src={HeroVideo} type="video/mp4" />
     </video> */}
+<div className="flex flex-col lg:flex-row">
+  <ProjectCard title="Heels" desc="01" cover={Img1}/>
+  <ProjectCard title="Hip hop" desc="02" cover={Img2}/>
+</div>
+<div className="flex flex-col lg:flex-row">
+  <ProjectCard title="Heels" desc="01" cover={Img1}/>
+  <ProjectCard title="Hip hop" desc="02" cover={Img2}/>
+</div>
 
   </Layout>
 )

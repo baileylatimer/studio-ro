@@ -4,10 +4,12 @@
   --color-contrast-higher: #000;
   --font-base: 20px;
   --text-lg: 64px;
+  --text-md: 49px;
 }
 
 h1 {
   @apply text-2xl;
+  font-size: var(--text-md)
 }
 h2 {
   @apply text-xl;
@@ -74,7 +76,6 @@ nav {
 }
 
 footer {
-  border-top: 1px solid var(--color-contrast-higher);
   position: relative;
 }
 footer p {
@@ -143,4 +144,16 @@ footer p {
   width: 1.8rem;
   height: 1.8rem;
   fill: currentColor;
+}
+
+/* CARDS
+========== */
+.project-card {
+  border: 1px solid var(--color-contrast-higher);
+  border-left: 0;
+  display: block;
+  width: 100%;
+}
+.project-card img {
+  object-fit: cover;
 }

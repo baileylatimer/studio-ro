@@ -2,7 +2,7 @@ import React from "react"
 
 const PageHeader = props => (
   
-  <footer className="mx-d flex justify-between">
+  <footer className="mx-d flex justify-between pt-40">
   <p>© 2023 / STUDIO–RO</p>
   <div className="flex">
     <a href="https://www.instagram.com/rocii_jorda/">Instagram</a>
