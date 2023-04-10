@@ -21,11 +21,11 @@ const ProjectCard  = ({ title, desc, cover, video }) => {
   
   return (
     <li className=" reveal-fx reveal-fx--translate-up">
-    <button onClick={() => openModal('https://example.com/video.mp4')}>
+    <button className="video-trigger" onClick={() => openModal('https://example.com/video.mp4')}>
         Open Modal
       </button>
       <VideoModal isOpen={isOpen} closeModal={closeModal} videoUrl={video} />
-      <Link className=" project-card" to='/'>
+      <Link className=" project-card">
         <div className="video-container">
           <BackgroundVideo video={cover}/>
         </div>

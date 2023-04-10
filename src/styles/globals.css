@@ -453,5 +453,12 @@ color: transparent !important;
   }
 }
 
+.video-trigger {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  color: transparent !important;
+}
+
 
 
