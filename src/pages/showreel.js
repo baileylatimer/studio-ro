@@ -23,12 +23,12 @@ const ShowreelPage = () => (
 <PageHeader title="Showreel"/>
 
 <div className="flex flex-col lg:flex-row  lg:mt-20">
-  <ProjectCard video={Heels2} title="21 questions" desc="50 Cent" cover={Img1}/>
-  <ProjectCard video={HipHop2} title="Can I" desc="Drake" cover={Img2}/>
+  <ProjectCard cover={Heels2} video={Heels2} title="21 questions" desc="50 Cent"/>
+  <ProjectCard cover={HipHop2} video={HipHop2} title="Can I" desc="Drake"/>
 </div>
 <div className="flex flex-col lg:flex-row">
-  <ProjectCard video={HipHop} title="Titi Mi Pregunto" desc="Bad Bunny" cover={Img3}/>
-  <ProjectCard video={Heels} title="Mi Amor" desc="Wade" cover={Img4}/>
+  <ProjectCard  cover={HipHop} video={HipHop} title="Titi Mi Pregunto" desc="Bad Bunny"/>
+  <ProjectCard  cover={Heels} video={Heels} title="Mi Amor" desc="Wade"/>
 </div>
 
   </Layout>
