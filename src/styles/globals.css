@@ -223,6 +223,7 @@ li {
   bottom: 40px;
   left:40px;
   max-width: 360px;
+  text-align: justify;
 }
 @media(max-width:1023px) {
 .hero-desc {
