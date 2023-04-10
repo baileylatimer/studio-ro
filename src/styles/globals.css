@@ -119,10 +119,17 @@ nav {
 
 @media(max-width:1023px) {
 nav {
-  width: calc(100vw - 60px);
+  width: calc(100vw - 40px);
+}
+.nav-logo {
+  transform: scale(.6);
+  -webkit-transform: scale(.6);
+  -moz-transform: scale(.6);
+  -ms-transform: scale(.6);
+  -o-transform: scale(.6);
+  margin-left: -40px;
 }
 }
-
 footer {
   position: relative;
 }
@@ -135,6 +142,10 @@ footer p {
   height: auto;
   position: absolute;
   bottom: -300px;
+}
+
+li {
+  list-style: none !important;
 }
 
 
