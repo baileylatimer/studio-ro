@@ -2,8 +2,8 @@ import React from "react"
 
 const PageHeader = props => (
   
-<div className="mt-60 mx-d flex justify-center">
-<h1 className="text-xxl">{props.title}</h1>
+<div className="mx-d mt-20 flex justify-center">
+<h1 className="text-xxl py-40">{props.title}</h1>
 </div>
 );
 
