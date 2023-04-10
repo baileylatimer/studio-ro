@@ -22,6 +22,9 @@
 body {
   background-color: var(--color-bg)
 }
+.bg-background {
+  background-color: var(--color-bg)
+}
 
 .text-white {
   color: var(--color-bg)
