@@ -19,6 +19,14 @@
   }
 }
 
+body {
+  background-color: var(--color-bg)
+}
+
+.text-white {
+  color: var(--color-bg)
+}
+
 h1 {
   @apply text-2xl;
   font-size: var(--text-md)
