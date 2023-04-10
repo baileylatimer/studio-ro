@@ -5,6 +5,7 @@
 
 :root {
   --color-contrast-higher: #000;
+  --color-bg: #DFDFDF;
   --font-base: 20px;
   --text-lg: 64px;
   --text-md: 49px;
@@ -144,6 +145,11 @@ footer p {
   bottom: -300px;
 }
 
+::selection {
+  background-color: var(--color-contrast-higher);
+  color: var(--color-bg)
+}
+
 li {
   list-style: none !important;
 }
@@ -281,7 +287,7 @@ background-color: var(--color-contrast-higher);
 }
 
 .marquee-container h1 {
-  color: #fff;
+  color: var(--color-bg);
 }
 
 .marquee {
