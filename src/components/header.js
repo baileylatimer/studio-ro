@@ -8,8 +8,8 @@ function Header({ siteTitle }) {
   const [isExpanded, toggleExpansion] = useState(false)
 
   return (
-    <nav className="flex flex-wrap items-center justify-between p-3 lg:p-6 px-d mx-d mb-6 bg-background">
-      <div className="flex items-center flex-shrink-0 mr-6 text-white">
+    <nav className="flex flex-wrap items-center justify-between py-3 lg:p-6 mx-d mb-6 bg-background">
+      <div className="flex items-center flex-shrink-0 mr-6 text-white px-d ">
       <Link
             to={`/`}
             className=" mb-0"
@@ -22,7 +22,7 @@ function Header({ siteTitle }) {
       </Link>
 
       </div>
-      <div className="block lg:hidden">
+      <div className="block lg:hidden px-d ">
         <button
           onClick={() => toggleExpansion(!isExpanded)}
           className="flex items-center px-3 py-2 "
@@ -40,7 +40,7 @@ function Header({ siteTitle }) {
       <div
         className={`${
           isExpanded ? `block` : `hidden`
-        } w-full nav-open block lg:flex lg:items-center lg:w-auto`}
+        } w-full nav-open block lg:flex lg:items-center lg:w-auto mt-4 pt-4 px-d `}
       >
         <div className="text-sm">
           <Link
