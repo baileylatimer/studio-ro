@@ -3,6 +3,7 @@
 :root {
   --color-contrast-higher: #000;
   --font-base: 20px;
+  --text-lg: 64px;
 }
 
 h1 {
@@ -24,6 +25,10 @@ a {
 }
 .text-xxl {
   font-size: 282px;
+}
+
+.text-lg {
+  font-size: var(--text-lg)
 }
 
 
@@ -68,6 +73,17 @@ nav {
   height: 100vh;
   display: block;
   position: relative;
+}
+
+@media(max-width:1023px) {
+  .nav-open {
+    height: calc(100% - 80px);
+    margin-top: 40px
+  }
+  nav a {
+    font-size: var(--text-lg);
+    margin-bottom: 64px
+  }
 }
 
 .ro {

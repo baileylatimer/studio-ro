@@ -35,7 +35,7 @@ function Header({ siteTitle }) {
       <div
         className={`${
           isExpanded ? `block` : `hidden`
-        } w-full block lg:flex lg:items-center lg:w-auto`}
+        } w-full nav-open block lg:flex lg:items-center lg:w-auto`}
       >
         <div className="text-sm">
           <Link
