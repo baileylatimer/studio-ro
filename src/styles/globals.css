@@ -184,6 +184,7 @@ footer p {
   overflow: hidden;
   white-space: nowrap;
   border-bottom: 1px solid var(--color-contrast-higher);
+  background-color: var(--color-contrast-higher);
 }
 
 .marquee h1, .marquee svg {
@@ -191,6 +192,7 @@ footer p {
   padding-left: 100%;
   animation: marquee 30s linear infinite;
   -webkit-animation: marquee 30s linear infinite;
+  color: #fff;
 }
 
 @keyframes marquee {
