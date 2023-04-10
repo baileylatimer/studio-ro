@@ -11,6 +11,8 @@ h1 {
 }
 h2 {
   @apply text-xl;
+  font-size: 40px;
+  line-height: 40px;
 }
 h3 {
   @apply text-lg;
@@ -31,6 +33,10 @@ a {
   font-size: var(--text-lg)
 }
 
+.mx-d {
+  margin-left: 40px;
+  margin-right: 40px;
+}
 
 @tailwind components;
 @tailwind utilities;
@@ -103,4 +109,10 @@ nav {
   bottom: 40px;
   left:40px;
   max-width: 360px;
+}
+
+/* HOME ABOUT 
+============== */
+.home-about .content {
+  max-width: 700px;
 }
