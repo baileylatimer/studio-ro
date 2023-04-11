@@ -8,6 +8,16 @@ const VideoModal = ({ isOpen, closeModal, videoUrl, videoTitle }) => {
       onRequestClose={closeModal}
       contentLabel="Video Modal"
       className="video-modal"
+      style={{ 
+        overlay: {
+          backgroundColor: "rgba(0, 0, 0, 0.6)",
+          display: "flex",
+          justifyContent: "center",
+          alignItems: "center",
+        },
+        
+
+      }}
     >
             <button unselectable="on" onClick={closeModal}>{videoTitle}</button>
       {/* Render the video using the videoUrl prop */}

@@ -449,13 +449,6 @@ background-color: var(--color-contrast-higher);
   background-color: transparent !important;
 }
 
-.ReactModal__Overlay--after-open {
-
-  background-color: transparent !important;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
 
 .video-modal button {
   color: #fff;
