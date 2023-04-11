@@ -462,7 +462,7 @@ background-color: var(--color-contrast-higher);
   color: #fff;
   width: 100%;
   backdrop-filter: blur(1rem);
-  background-color: rgba(0,0,0,.4);
+  background-color: rgba(0,0,0,.1);
   height: 3rem;
   text-transform: uppercase;
   user-select: none;
