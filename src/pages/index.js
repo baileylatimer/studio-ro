@@ -8,7 +8,6 @@ import SEO from "../components/seo"
 import Hero from "../components/hero"
 import ProjectCard from "../components/project-card"
 import HomeAbout from "../components/home-about"
-import HeroVideo from "../videos/hero.mp4"
 
 import Heels2 from "../videos/heels-2.mp4"
 import HipHop2 from "../videos/hip-hop-2.mp4"
