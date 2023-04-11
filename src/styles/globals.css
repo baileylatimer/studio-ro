@@ -432,7 +432,7 @@ background-color: var(--color-contrast-higher);
 ================== */
 
 
-.ReactModal__Content--after-open {
+.video-modal {
   height: auto;
   top: 20%;
   position: relative !important;
@@ -457,18 +457,21 @@ background-color: var(--color-contrast-higher);
   align-items: center;
 }
 
-.ReactModal__Content--after-open button {
+.video-modal button {
   color: #fff;
   width: 100%;
   backdrop-filter: blur(1rem);
-background-color: rgba(0,0,0,.4);
-height: 3rem;
-text-transform: uppercase;
-user-select: none;
-
-
+  background-color: rgba(0,0,0,.4);
+  height: 3rem;
+  text-transform: uppercase;
+  user-select: none;
+  border-radius: 20px 20px 0 0;
+  -webkit-border-radius: 20px 20px 0 0;
+  -moz-border-radius: 20px 20px 0 0;
+  -ms-border-radius: 20px 20px 0 0;
+  -o-border-radius: 20px 20px 0 0;
 }
-.ReactModal__Content--after-open button:after {
+.video-modal button:after {
   content: '';
   height: 14px;
   width: 14px;
@@ -485,7 +488,7 @@ user-select: none;
 }
 
 @media(max-width:1023px) {
-  .ReactModal__Content--after-open {
+  .video-modal {
     max-width: calc(100vw - 40px);
   }
   .ReactModal__Overlay--after-open {
