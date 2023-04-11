@@ -408,6 +408,8 @@ background-color: var(--color-contrast-higher);
   -moz-border-radius: 20px !important;
   -ms-border-radius: 20px !important;
   -o-border-radius: 20px !important;
+  border: none !important;
+  background-color: transparent !important;
 }
 
 .ReactModal__Overlay--after-open {
@@ -419,14 +421,15 @@ background-color: var(--color-contrast-higher);
 }
 
 .ReactModal__Content--after-open button {
-  position: absolute;
-  top: 0;
-  left: 0;
+  color: #fff;
   width: 100%;
   backdrop-filter: blur(1rem);
 background-color: rgba(0,0,0,.4);
 height: 3rem;
-color: transparent !important;
+text-transform: uppercase;
+user-select: none;
+
+
 }
 .ReactModal__Content--after-open button:after {
   content: '';

@@ -4,10 +4,11 @@ import { StaticImage } from "gatsby-plugin-image"
 import BackgroundVideo from "./bg-video"
 import VideoModal from './video-modal';
 
-const ProjectCard  = ({ title, desc, cover, video }) => {
+const ProjectCard  = ({ title, desc, cover, video, videoTitle  }) => {
   const [isOpen, setIsOpen] = useState(false);
   const [videoUrl, setVideoUrl] = useState('');
   
+
 
   const openModal = (url) => {
     setIsOpen(true);
@@ -25,7 +26,7 @@ const ProjectCard  = ({ title, desc, cover, video }) => {
   };
   
   return (
-    <li className=" reveal-fx reveal-fx--translate-up"       
+    <li className={videoTitle + " reveal-fx reveal-fx--translate-up"     }  
     id="draggableDiv"
     draggable={true}
     onDragStart={handleDragStart}
@@ -33,7 +34,7 @@ const ProjectCard  = ({ title, desc, cover, video }) => {
     <button className="video-trigger" onClick={() => openModal('https://example.com/video.mp4')}>
         Open Modal
       </button>
-      <VideoModal isOpen={isOpen} closeModal={closeModal} videoUrl={video} />
+      <VideoModal isOpen={isOpen} closeModal={closeModal} videoUrl={video} videoTitle={videoTitle}  />
       <Link className=" project-card">
         <div className="video-container">
           <BackgroundVideo video={cover}/>
