@@ -21,11 +21,13 @@ import Video4 from "../videos/video-4.mp4"
 import Heels from "../videos/heels.mp4"
 import HipHop from "../videos/hip-hop.mp4"
 
+
 const IndexPage = () => (
   <Layout>
     <SEO title="Home" />
     <Hero />
     <HomeAbout />
+
     {/* <video autoplay  loop playsinline>
       <source src={HeroVideo} type="video/mp4" />
     </video> */}

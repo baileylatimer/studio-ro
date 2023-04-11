@@ -306,14 +306,49 @@ li {
 
 /* CARDS
 ========== */
+
+
 .project-card {
   border: 1px solid var(--color-contrast-higher);
   border-left: 0;
   display: block;
   width: 100%;
+  cursor: none;
 }
-.project-card img {
-  object-fit: cover;
+:root {
+  --cursor-top: -300px;
+}
+
+.project-card:hover {
+  /* Hide the default cursor */
+  cursor: none !important;
+  /* Set the custom cursor's position to match the mouse pointer */
+  --top: calc(var(--cursor-top) + 100px); /* Adjust the value as needed */
+  --left: calc(var(--cursor-left) + 500px); /* Adjust the value as needed */
+  /* Show the custom cursor */
+  display: block;
+  /* Set the custom cursor's position to match the mouse pointer */
+  position: fixed;
+  top: 0;
+  left: var(--left);
+  z-index: 9999;
+}
+
+.custom-cursor {
+  position: absolute;
+}
+
+@media(max-width:1023px) {
+  .custom-cursor {
+    display: none;
+  }
+}
+
+.custom-cursor:nth-of-type(1n) {
+  display: block;
+}
+.custom-cursor:nth-of-type(2) {
+  display: none;
 }
 
 .video-container {
@@ -395,6 +430,8 @@ background-color: var(--color-contrast-higher);
 
 /* VIDEO MODAL
 ================== */
+
+
 .ReactModal__Content--after-open {
   height: auto;
   top: 20%;
