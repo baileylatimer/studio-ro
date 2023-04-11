@@ -15,7 +15,7 @@ module.exports = {
         name: `images`,
         path: `${__dirname}/src/images`,
         name: 'videos',
-        path: `${__dirname}/src/videos/`,
+        path: `${__dirname}/src/videos`,
       },
     },
     `gatsby-plugin-image`,
