@@ -12,7 +12,7 @@ import HomeAbout from "../components/home-about"
 import Heels2 from "../videos/heels-2.mp4"
 import HipHop2 from "../videos/hip-hop-2.mp4"
 
-import Video1 from "../videos/heels-2.mp4"
+import Video1 from "../videos/video-1.mp4"
 import Video2 from "../videos/video-2.mp4"
 import Video3 from "../videos/video-3.mp4"
 import Video4 from "../videos/video-4.mp4"
