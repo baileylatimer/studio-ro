@@ -18,9 +18,18 @@ const ProjectCard  = ({ title, desc, cover, video }) => {
     setIsOpen(false);
     setVideoUrl('');
   };
+
+  const handleDragStart = (event) => {
+    // Set the data being dragged
+    event.dataTransfer.setData('text/plain', event.target.id);
+  };
   
   return (
-    <li className=" reveal-fx reveal-fx--translate-up">
+    <li className=" reveal-fx reveal-fx--translate-up"       
+    id="draggableDiv"
+    draggable={true}
+    onDragStart={handleDragStart}
+    style={{ cursor: 'move' }}>
     <button className="video-trigger" onClick={() => openModal('https://example.com/video.mp4')}>
         Open Modal
       </button>

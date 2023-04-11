@@ -453,6 +453,10 @@ color: transparent !important;
   }
 }
 
+#draggableDiv {
+  position: relative;
+}
+
 .video-trigger {
   position: absolute;
   height: 100%;
