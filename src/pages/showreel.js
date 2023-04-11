@@ -32,7 +32,7 @@ const ShowreelPage = () => (
 </div>
 <div className="flex flex-col lg:flex-row">
   <ProjectCard  cover={HipHop2} video={Video3} title="Titi Mi Pregunto" desc="Bad Bunny"/>
-  <ProjectCard  cover={HipHop} video={Video4} title="Mi Amor" desc="Wade"/>
+  <ProjectCard  cover={HipHop} video={Video4} title="Mi Amor" desc="Wade"/> 
 </div>
 
   </Layout>
