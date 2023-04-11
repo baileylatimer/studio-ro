@@ -15,7 +15,10 @@ const VideoModal = ({ isOpen, closeModal, videoUrl, videoTitle }) => {
           justifyContent: "center",
           alignItems: "center",
         },
-        
+        content: {
+          borderRadius: "20px",
+          overflow: "hidden",
+        }
 
       }}
     >
