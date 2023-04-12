@@ -330,6 +330,10 @@ li {
   width: 100%;
   cursor: none;
 }
+
+.project-card video {
+  max-height: 487px;
+}
 :root {
   --cursor-top: -300px;
 }
@@ -413,7 +417,7 @@ background-color: var(--color-contrast-higher);
   overflow: hidden;
   position: absolute;
 
-  top:1.5rem;
+  top: 3.8rem;
   white-space: nowrap;
   animation: marquee 30s linear infinite;
 
@@ -424,7 +428,7 @@ background-color: var(--color-contrast-higher);
   animation-delay: 15s;
   position: absolute;
 
-  top:1.5rem;
+  top: 3.8rem;
 }
 
 @keyframes marquee {

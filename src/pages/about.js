@@ -20,7 +20,7 @@ const AboutPage = () => (
       <TextCard text="STUDIO–RO is an award-winning dance practice working across a mix of disciplines that includes Heels, Hip hop, ballet, & Flaminco."/>
       <TextCard text="Rocio Colomer Jorda has 15 years of dance experience. With influences from her home country of Spain, she now teaches in San Diego, CA."/>
     </div>
-    <ContactBanner/>
+    <ContactBanner link="/contact" title="Get in touch"/>
   </Layout>
 )
 

@@ -21,13 +21,9 @@ const ProjectCard  = ({ title, desc, cover, video, videoTitle, tag  }) => {
     setVideoUrl('');
   };
 
-  const handleDragStart = (event) => {
-    // Set the data being dragged
-    event.dataTransfer.setData('text/plain', event.target.id);
-  };
   
   return (
-    <li className={tag + "relative"}  >
+    <li className={tag + " relative"}  >
     <button className="video-trigger" onClick={() => openModal('https://example.com/video.mp4')}>
         Open Modal
       </button>
