@@ -5,7 +5,7 @@ import BackgroundVideo from "./bg-video"
 import VideoModal from './video-modal';
 import CustomCursor from "./cursor";
 
-const ProjectCard  = ({ title, desc, cover, video, videoTitle  }) => {
+const ProjectCard  = ({ title, desc, cover, video, videoTitle, tag  }) => {
   const [isOpen, setIsOpen] = useState(false);
   const [videoUrl, setVideoUrl] = useState('');
   
@@ -27,7 +27,7 @@ const ProjectCard  = ({ title, desc, cover, video, videoTitle  }) => {
   };
   
   return (
-    <li className="relative">
+    <li className={tag + "relative"}  >
     <button className="video-trigger" onClick={() => openModal('https://example.com/video.mp4')}>
         Open Modal
       </button>

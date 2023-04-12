@@ -46,12 +46,12 @@ function Header({ siteTitle }) {
         } w-full nav-open block lg:flex lg:items-center lg:w-auto mt-4 pt-4 lg:mt-0 lg:pt-0 px-d `}
       >
         <div className="text-sm">
-          {/* <Link
+          <Link
             to={`/showreel`}
             className="block mt-4 mr-4 lg:inline-block lg:mt-0 "
           >
             Showreel
-          </Link> */}
+          </Link>
           <Link
             to={`/about`}
             className="block mt-4 mr-4 lg:inline-block lg:mt-0 "
