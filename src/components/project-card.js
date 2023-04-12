@@ -45,7 +45,7 @@ const ProjectCard  = ({ title, desc, cover, video, videoTitle  }) => {
             <h1 className="lg:mt-0 color-contrast-medium"id="card-title-2">{desc}</h1>
         </div>
         </Link>
-        <CustomCursor />
+        {/* <CustomCursor /> */}
     </li>
 );
 };
