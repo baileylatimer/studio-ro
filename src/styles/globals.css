@@ -153,14 +153,28 @@ footer p {
   width: 100%;
   height: auto;
   position: absolute;
-  bottom: -300px;
+  bottom: 0
 }
 
-@media(max-width:1023px) {
-  .logo {
-    bottom: -115px;
-  }
+.stripes {
+  width: 100vw;
+  height: auto;
+  position: absolute;
+  bottom: -300px;
+  z-index: -2;
 }
+
+.bg-primary {
+  background-color: var(--color-bg);
+  width: 100vw
+}
+
+.bg-inverse{
+  background-color: var(--color-contrast-higher);
+  width: 100vw
+}
+
+
 
 ::selection {
   background-color: var(--color-contrast-higher);
