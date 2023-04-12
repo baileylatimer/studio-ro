@@ -27,11 +27,7 @@ const ProjectCard  = ({ title, desc, cover, video, videoTitle  }) => {
   };
   
   return (
-    <li className={videoTitle + " reveal-fx reveal-fx--translate-up"     }  
-    id="draggableDiv"
-    draggable={true}
-    onDragStart={handleDragStart}
-    style={{ cursor: 'move' }}>
+    <li className="relative">
     <button className="video-trigger" onClick={() => openModal('https://example.com/video.mp4')}>
         Open Modal
       </button>
