@@ -24,7 +24,7 @@ import Hh3 from "../videos/hh-003.mp4"
 import Hh4 from "../videos/hh-004.mp4"
 import Hh5 from "../videos/hh-005.mp4"
 import Hh6 from "../videos/hh-006.mp4"
-// import Hh7 from "../videos/hh-07.mp4"
+import Hh7 from "../videos/hh-007.mp4"
 
 import Hhs1 from "../videos/hhs-01.mp4"
 import Hhs2 from "../videos/hhs-02.mp4"
@@ -62,9 +62,9 @@ const ShowreelPage = () => (
   <ProjectCard cover={Hhs5} video={Hh5} videoTitle="Rosalia_A-PALE" title="A Pale" desc="Rosalia" tag="heels"/>
   <ProjectCard cover={Hhs6} video={Hh6} videoTitle="Jealousy-Lies_Elliot-Trent" title="Jealousy & Lies" desc="Elliot Trent" tag="heels"/>
 </div>
-{/* <div className="flex flex-col lg:flex-row ">
+<div className="flex flex-col lg:flex-row ">
   <ProjectCard cover={Hhs7} video={Hh7} videoTitle="Missy-Elliot_JOY" title="JOY" desc="Missy Elliot" tag="heels"/>
-</div> */}
+</div>
 
   </Layout>
 )
