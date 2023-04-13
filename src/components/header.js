@@ -47,7 +47,7 @@ function Header({ siteTitle }) {
       >
         <div className="text-sm">
           <Link
-            to={`/showreel`}
+            to={`/showreel/all`}
             className="block mt-4 mr-4 lg:inline-block lg:mt-0 "
           >
             Showreel

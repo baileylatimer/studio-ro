@@ -358,6 +358,12 @@ li {
 .project-card video {
   max-height: 487px;
 }
+@media(min-width:1023px) {
+.project-card video {
+  height: 487px;
+}
+}
+
 :root {
   --cursor-top: -300px;
 }

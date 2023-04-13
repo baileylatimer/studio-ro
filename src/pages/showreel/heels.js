@@ -37,7 +37,7 @@ import Hhs7 from "../../videos/hhs-07.mp4"
 
 const ShowreelPage = () => (
   <Layout>
-    <SEO title="Showreel" />
+    <SEO title="Heels | Showreel" />
 <PageHeader title="Showreel"/>
 
 

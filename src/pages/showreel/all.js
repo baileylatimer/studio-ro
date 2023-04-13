@@ -37,7 +37,7 @@ import Hhs7 from "../../videos/hhs-07.mp4"
 
 const ShowreelPage = () => (
   <Layout>
-    <SEO title="Showreel" />
+    <SEO title="All | Showreel" />
 <PageHeader title="Showreel"/>
 
 <div className="flex w-full justify-center mb-8">
