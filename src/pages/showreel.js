@@ -20,11 +20,11 @@ import HipHop from "../videos/hip-hop.mp4"
 
 import Hh1 from "../videos/hh-001.mp4"
 import Hh2 from "../videos/video-2.mp4"
-// import Hh3 from "../videos/hh-03.mp4"
-// import Hh4 from "../videos/hh-04.mp4"
-// import Hh5 from "../videos/hh-05.mp4"
-// import Hh6 from "../videos/hh-06.mp4"
-// import Hh7 from "../videos/hh-07.mp4"
+import Hh3 from "../videos/hh-03.mp4"
+import Hh4 from "../videos/hh-04.mp4"
+import Hh5 from "../videos/hh-05.mp4"
+import Hh6 from "../videos/hh-06.mp4"
+import Hh7 from "../videos/hh-07.mp4"
 
 import Hhs1 from "../videos/hhs-01.mp4"
 import Hhs2 from "../videos/hhs-02.mp4"
@@ -54,7 +54,7 @@ const ShowreelPage = () => (
   <ProjectCard cover={Hhs1} video={Hh1} videoTitle="50-Cent_21-Questions" title="21 Questions" desc="50 Cent" tag="heels"/>
   <ProjectCard cover={Hhs2} video={Hh2} videoTitle="" title="" desc="" tag="heels"/>
 </div>
-{/* <div className="flex flex-col lg:flex-row ">
+<div className="flex flex-col lg:flex-row ">
   <ProjectCard cover={Hhs3} video={Hh3} videoTitle="Chingy_Fly-Like-Me" title="Fly Like Me" desc="Chingy" tag="heels"/>
   <ProjectCard cover={Hhs4} video={Hh4} videoTitle="BowWow_Let-Me-Hold-You" title="Let Me Hold You" desc="Bow Wow" tag="heels"/>
 </div>
@@ -64,7 +64,7 @@ const ShowreelPage = () => (
 </div>
 <div className="flex flex-col lg:flex-row ">
   <ProjectCard cover={Hhs7} video={Hh7} videoTitle="Missy-Elliot_JOY" title="JOY" desc="Missy Elliot" tag="heels"/>
-</div> */}
+</div>
 
   </Layout>
 )
