@@ -18,7 +18,7 @@ import Video4 from "../videos/video-4.mp4"
 import Heels from "../videos/heels.mp4"
 import HipHop from "../videos/hip-hop.mp4"
 
-import Hh1 from "../videos/video-1.mp4"
+import Hh1 from "../videos/hh-001.mp4"
 import Hh2 from "../videos/video-2.mp4"
 // import Hh3 from "../videos/hh-03.mp4"
 // import Hh4 from "../videos/hh-04.mp4"
@@ -51,8 +51,8 @@ const ShowreelPage = () => (
 
 <ContactBanner link="/contact" title="Hip Hop"/>
 <div className="flex flex-col lg:flex-row ">
-  <ProjectCard cover={Hhs1} video={Hh1} videoTitle="Rosalia_LA-COMBI-VERSACE" title="LA COMBI VERSACE" desc="Rosalia" tag="heels"/>
-  <ProjectCard cover={Hhs2} video={Hh2} videoTitle="50-Cent_21-Questions" title="21 Questions" desc="50 Cent" tag="heels"/>
+  <ProjectCard cover={Hhs1} video={Hh1} videoTitle="50-Cent_21-Questions" title="21 Questions" desc="50 Cent" tag="heels"/>
+  <ProjectCard cover={Hhs2} video={Hh2} videoTitle="" title="" desc="" tag="heels"/>
 </div>
 {/* <div className="flex flex-col lg:flex-row ">
   <ProjectCard cover={Hhs3} video={Hh3} videoTitle="Chingy_Fly-Like-Me" title="Fly Like Me" desc="Chingy" tag="heels"/>
