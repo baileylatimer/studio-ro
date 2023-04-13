@@ -18,8 +18,8 @@ const IndexPage = () => (
     <Hero />
     <HomeAbout />
 <div className="flex flex-col lg:flex-row  lg:mt-20">
-  <ProjectCard link='showreel' cover={Heels2} videoTitle="Rosalia_LA-COMBI-VERSACE" title="Heels" desc="01"/>
-  <ProjectCard link='showreel' cover={Heels} videoTitle="Beyonce_Im-That-Girl" title="Hip Hop" desc="02"/>
+  <ProjectCard link='/showreel/heels' cover={Heels2} videoTitle="Rosalia_LA-COMBI-VERSACE" title="Heels" desc="01"/>
+  <ProjectCard link='/showreel/hip-hop' cover={Heels} videoTitle="Beyonce_Im-That-Girl" title="Hip Hop" desc="02"/>
 </div>
 
 
