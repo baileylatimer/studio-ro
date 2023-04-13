@@ -357,7 +357,6 @@ li {
   border-left: 0;
   display: block;
   width: 100%;
-  cursor: none;
 }
 
 .project-card video {
@@ -373,20 +372,7 @@ li {
   --cursor-top: -300px;
 }
 
-.project-card:hover {
-  /* Hide the default cursor */
-  cursor: none !important;
-  /* Set the custom cursor's position to match the mouse pointer */
-  --top: calc(var(--cursor-top) + 100px); /* Adjust the value as needed */
-  --left: calc(var(--cursor-left) + 500px); /* Adjust the value as needed */
-  /* Show the custom cursor */
-  display: block;
-  /* Set the custom cursor's position to match the mouse pointer */
-  position: fixed;
-  top: 0;
-  left: var(--left);
-  z-index: 9999;
-}
+
 
 .custom-cursor {
   position: absolute;
