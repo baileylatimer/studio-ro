@@ -23,7 +23,7 @@ import Hh2 from "../videos/video-2.mp4"
 import Hh3 from "../videos/hh-003.mp4"
 import Hh4 from "../videos/hh-004.mp4"
 import Hh5 from "../videos/hh-005.mp4"
-import Hh6 from "../videos/hh-005.mp4"
+import Hh6 from "../videos/hh-006.mp4"
 // import Hh7 from "../videos/hh-07.mp4"
 
 import Hhs1 from "../videos/hhs-01.mp4"
