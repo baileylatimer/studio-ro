@@ -6,8 +6,8 @@ import Hero from "../components/hero"
 import ProjectCardHome from "../components/project-card-home"
 import HomeAbout from "../components/home-about"
 
-import Heels2 from "../videos/heels-2.mp4"
 
+import Hhs4 from "../videos/hhs-04.mp4"
 import Heels from "../videos/heels.mp4"
 
 
@@ -18,8 +18,8 @@ const IndexPage = () => (
     <Hero />
     <HomeAbout />
 <div className="flex flex-col lg:flex-row  lg:mt-20">
-  <ProjectCardHome link='/showreel/heels' cover={Heels2}  title="Heels" desc="01"/>
-  <ProjectCardHome link='/showreel/hip-hop' cover={Heels}  title="Hip Hop" desc="02"/>
+  <ProjectCardHome link='/showreel/heels' cover={Heels}  title="Heels" desc="01"/>
+  <ProjectCardHome link='/showreel/hip-hop' cover={Hhs4}  title="Hip Hop" desc="02"/>
 </div>
 
 
