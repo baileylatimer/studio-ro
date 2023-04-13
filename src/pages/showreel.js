@@ -51,20 +51,18 @@ const ShowreelPage = () => (
 
 <ContactBanner link="/contact" title="Hip Hop"/>
 <div className="flex flex-col lg:flex-row ">
-  <ProjectCard cover={Hhs1} video={Hh1} videoTitle="50-Cent_21-Questions" title="21 Questions" desc="50 Cent" tag="heels"/>
-  <ProjectCard cover={Hhs2} video={Hh2} videoTitle="" title="" desc="" tag="heels"/>
-</div>
-<div className="flex flex-col lg:flex-row ">
-  <ProjectCard cover={Hhs3} video={Hh3} videoTitle="Chingy_Fly-Like-Me" title="Fly Like Me" desc="Chingy" tag="heels"/>
-  <ProjectCard cover={Hhs4} video={Hh4} videoTitle="BowWow_Let-Me-Hold-You" title="Let Me Hold You" desc="Bow Wow" tag="heels"/>
-</div>
-<div className="flex flex-col lg:flex-row ">
-  <ProjectCard cover={Hhs5} video={Hh5} videoTitle="Rosalia_A-PALE" title="A Pale" desc="Rosalia" tag="heels"/>
-  <ProjectCard cover={Hhs6} video={Hh6} videoTitle="Jealousy-Lies_Elliot-Trent" title="Jealousy & Lies" desc="Elliot Trent" tag="heels"/>
-</div>
-<div className="flex flex-col lg:flex-row ">
+  <ProjectCard cover={Hhs4} video={Hh1} videoTitle="50-Cent_21-Questions" title="21 Questions" desc="50 Cent" tag="heels"/>
   <ProjectCard cover={Hhs7} video={Hh7} videoTitle="Missy-Elliot_JOY" title="JOY" desc="Missy Elliot" tag="heels"/>
 </div>
+<div className="flex flex-col lg:flex-row ">
+  <ProjectCard cover={Hhs2} video={Hh3} videoTitle="Chingy_Fly-Like-Me" title="Fly Like Me" desc="Chingy" tag="heels"/>
+  <ProjectCard cover={Hhs1} video={Hh6} videoTitle="BowWow_Let-Me-Hold-You" title="Let Me Hold You" desc="Bow Wow" tag="heels"/>
+</div>
+<div className="flex flex-col lg:flex-row ">
+  <ProjectCard cover={Hhs3} video={Hh5} videoTitle="Rosalia_A-PALE" title="A Pale" desc="Rosalia" tag="heels"/>
+  <ProjectCard cover={Hhs5} video={Hh4} videoTitle="Jealousy-Lies_Elliot-Trent" title="Jealousy & Lies" desc="Elliot Trent" tag="heels"/>
+</div>
+
 
   </Layout>
 )
