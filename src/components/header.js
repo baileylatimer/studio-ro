@@ -30,14 +30,13 @@ function Header({ siteTitle }) {
           onClick={() => toggleExpansion(!isExpanded)}
           className="flex items-center px-3 py-2 "
         >
-          <svg
-            className="w-7 h-7 fill-current"
-            viewBox="0 0 20 20"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <title>Menu</title>
-            <path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z" />
-          </svg>
+<svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+<rect x="1" y="9" width="25" height="2" fill="black"/>
+<rect x="1" y="17" width="25" height="2" fill="black"/>
+</svg>
+
+
+
         </button>
       </div>
       <div
