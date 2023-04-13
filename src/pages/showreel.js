@@ -22,8 +22,8 @@ import Hh1 from "../videos/hh-001.mp4"
 import Hh2 from "../videos/video-2.mp4"
 import Hh3 from "../videos/hh-003.mp4"
 import Hh4 from "../videos/hh-004.mp4"
-// import Hh5 from "../videos/hh-05.mp4"
-// import Hh6 from "../videos/hh-06.mp4"
+import Hh5 from "../videos/hh-005.mp4"
+import Hh6 from "../videos/hh-005.mp4"
 // import Hh7 from "../videos/hh-07.mp4"
 
 import Hhs1 from "../videos/hhs-01.mp4"
@@ -58,11 +58,11 @@ const ShowreelPage = () => (
   <ProjectCard cover={Hhs3} video={Hh3} videoTitle="Chingy_Fly-Like-Me" title="Fly Like Me" desc="Chingy" tag="heels"/>
   <ProjectCard cover={Hhs4} video={Hh4} videoTitle="BowWow_Let-Me-Hold-You" title="Let Me Hold You" desc="Bow Wow" tag="heels"/>
 </div>
-{/* <div className="flex flex-col lg:flex-row ">
+<div className="flex flex-col lg:flex-row ">
   <ProjectCard cover={Hhs5} video={Hh5} videoTitle="Rosalia_A-PALE" title="A Pale" desc="Rosalia" tag="heels"/>
   <ProjectCard cover={Hhs6} video={Hh6} videoTitle="Jealousy-Lies_Elliot-Trent" title="Jealousy & Lies" desc="Elliot Trent" tag="heels"/>
 </div>
-<div className="flex flex-col lg:flex-row ">
+{/* <div className="flex flex-col lg:flex-row ">
   <ProjectCard cover={Hhs7} video={Hh7} videoTitle="Missy-Elliot_JOY" title="JOY" desc="Missy Elliot" tag="heels"/>
 </div> */}
 
