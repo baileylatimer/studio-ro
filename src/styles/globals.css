@@ -550,3 +550,26 @@ background-color: var(--color-contrast-higher);
 
 
 
+/* CURSOR 
+========== */
+* {
+  cursor: none !important;
+}
+.svg-cursor {
+  width: 29px;
+  height: 30px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  pointer-events: none; /* Make the cursor element non-interactable */
+  z-index: 9999; /* Set a high z-index to ensure the cursor is displayed above other elements */
+  mix-blend-mode: difference;
+
+}
+@media(max-width:486px) {
+  .svg-cursor {
+  display: none !important;
+  }
+}
+
+/* Add additional CSS rules to style the cursor element as desired */

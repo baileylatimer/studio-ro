@@ -11,6 +11,7 @@ import { useStaticQuery, graphql } from "gatsby"
 
 import Header from "./header"
 import Footer from "./footer"
+import CustomCursor from './cursor';
 
 const Layout = ({ children }) => {
   const data = useStaticQuery(graphql`
@@ -29,7 +30,10 @@ const Layout = ({ children }) => {
       <div
 
       >
+
+ 
         <main>{children}</main>
+        <CustomCursor />
       <Footer/>
       </div>
     </>

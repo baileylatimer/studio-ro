@@ -1,38 +1,65 @@
-import React, { useEffect, useState } from "react";
-import { ReactComponent as CursorSvg } from "../images/custom-cursor.svg";
-import defaultCursor from "../images/transparent.png"; // Import the transparent image
+import React, { useEffect, useState } from 'react';
+
 
 const CustomCursor = () => {
-  const [cursorPosition, setCursorPosition] = useState({ top: 500, left: 0 });
+  const [cursorPosition, setCursorPosition] = useState({ x: 0, y: 0 });
 
   useEffect(() => {
-    const handleMouseMove = (e) => {
-      setCursorPosition({ top: e.clientY, left: e.clientX });
+    const updateCursorPosition = (e) => {
+      setCursorPosition({ x: e.clientX, y: e.clientY });
     };
-    window.addEventListener("mousemove", handleMouseMove);
+
+    window.addEventListener('mousemove', updateCursorPosition);
 
     return () => {
-      window.removeEventListener("mousemove", handleMouseMove);
+      window.removeEventListener('mousemove', updateCursorPosition);
     };
   }, []);
 
   return (
-    <>
-      {/* Render the default cursor */}
-      <img
-        src={defaultCursor}
-        alt="Custom Cursor"
-        className="default-cursor"
-        style={{ top: cursorPosition.top, left: cursorPosition.left }}
-      />
-      {/* Render the custom cursor */}
-      <svg  className="custom-cursor"
-        style={{ top: cursorPosition.top, left: cursorPosition.left }} fill="none" xmlns="http://www.w3.org/2000/svg">
-<path d="M0 18.5415C20.2857 -4.96649 47.8163 -7.3654 71 18.5415C48.7823 42.5337 21.2517 41.0943 0 18.5415Z" fill="#DFDFDF"/>
-<path fill-rule="evenodd" clip-rule="evenodd" d="M35.5 29C45.7173 29 54 20.9411 54 11C54 8.56382 53.5026 6.24067 52.6012 4.12147C41.1417 -1.42691 29.3817 -1.25326 18.4864 3.91909C17.5297 6.09243 17 8.48603 17 11C17 20.9411 25.2827 29 35.5 29Z" fill="black"/>
-</svg>
+    <svg
+      className="svg-cursor"
+      width="27"
+      height="28"
+      viewBox="0 0 24 25"
+      fill="none"
+      xmlns="http://www.w3.org/2000/svg"
+      style={{
+        position: 'fixed',
+        top: cursorPosition.y,
+        left: cursorPosition.x,
+        pointerEvents: 'none',
+        zIndex: 9999,
+      }}
+    >
 
-    </>
+
+
+
+<g filter="url(#filter0_d_2496_676)">
+<path d="M10.9427 24.9998L7.02864 5.05092L25 14.8975L16.1476 17.4657L10.9427 24.9998Z" fill="white"/>
+<path d="M10.9427 24.9998L7.02864 5.05092L25 14.8975L16.1476 17.4657L10.9427 24.9998Z" stroke="black"/>
+</g>
+<defs>
+<filter id="filter0_d_2496_676" x="4.33057" y="3.10059" width="23.9663" height="26.1633" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+<feFlood flood-opacity="0" result="BackgroundImageFix"/>
+<feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+<feOffset dy="1"/>
+<feGaussianBlur stdDeviation="1"/>
+<feComposite in2="hardAlpha" operator="out"/>
+<feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0"/>
+<feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_2496_676"/>
+<feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_2496_676" result="shape"/>
+</filter>
+</defs>
+
+
+
+
+
+
+
+    </svg>
   );
 };
 
