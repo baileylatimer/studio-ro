@@ -7,6 +7,7 @@ import Timezone2 from './date-2'
 
 function Header({ siteTitle }) {
   const [isExpanded, toggleExpansion] = useState(false)
+  const currentPath = typeof window !== "undefined" ? window.location.pathname : ""
 
   return (
     <nav className="flex flex-wrap items-center justify-between py-3 lg:p-6 mx-d mb-6 bg-background">
@@ -30,13 +31,10 @@ function Header({ siteTitle }) {
           onClick={() => toggleExpansion(!isExpanded)}
           className="flex items-center px-3 py-2 "
         >
-<svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
-<rect x="1" y="9" width="25" height="2" fill="black"/>
-<rect x="1" y="17" width="25" height="2" fill="black"/>
-</svg>
-
-
-
+          <svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <rect x="1" y="9" width="25" height="2" fill="black"/>
+          <rect x="1" y="17" width="25" height="2" fill="black"/>
+          </svg>
         </button>
       </div>
       <div
@@ -48,18 +46,21 @@ function Header({ siteTitle }) {
           <Link
             to={`/showreel/all`}
             className="block mt-4 mr-4 lg:inline-block lg:mt-0 "
+            activeClassName="active-link"
           >
             Showreel
           </Link>
           <Link
             to={`/about`}
             className="block mt-4 mr-4 lg:inline-block lg:mt-0 "
+            activeClassName="active-link"
           >
             About
           </Link>
           <Link
             to={`/contact`}
             className="block mt-4 mr-4 lg:inline-block lg:mt-0 "
+            activeClassName="active-link"
           >
             Contact
           </Link>
