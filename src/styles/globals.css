@@ -568,7 +568,7 @@ background-color: var(--color-contrast-higher);
 }
 @media(max-width:486px) {
   .svg-cursor {
-  display: none !important;
+  display: none !important; 
   }
 }
 
