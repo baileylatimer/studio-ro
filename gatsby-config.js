@@ -1,7 +1,7 @@
 module.exports = {
   siteMetadata: {
     title: `STUDIO–RO®`,
-    description: `STUDIO–RO is an award-winning dance practice founded by Rocio Colomer Jorda working across a mix of disciplines that includes Heels, Hip Hop, Ballet, & Flaminco.`,
+    description: `STUDIO–RO is an award-winning dance practice founded by Rocio Colomer Jorda working across a mix of disciplines that includes Heels & Hip Hop.`,
     author: `@latimer2k`,
   },
   flags: {
