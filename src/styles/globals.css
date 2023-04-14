@@ -162,6 +162,12 @@ nav {
 nav {
   width: calc(100vw - 40px);
 }
+
+
+.active-link {
+  text-decoration: underline !important;
+}
+
 .nav-logo {
   transform: scale(.6);
   -webkit-transform: scale(.6);
