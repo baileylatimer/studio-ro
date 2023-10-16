@@ -1,5 +1,11 @@
 import React from "react"
 
+import { gsap } from "gsap";
+    
+import { Draggable } from "gsap/Draggable";
+
+
+
 const HomeAbout = props => (
   
 <div class="home-about py-20 mx-d flex justify-end">
@@ -9,5 +15,8 @@ const HomeAbout = props => (
 </div>
 </div>
 );
+ 
+gsap.registerPlugin(Draggable);
+Draggable.create(".content");
 
 export default HomeAbout
