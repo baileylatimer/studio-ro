@@ -14,7 +14,7 @@ class Timezone2 extends React.Component {
 
 
 
-        <span className='ml-4'>Barcelona {this.state.curTime}</span>
+        <span className='ml-4'>Valencia {this.state.curTime}</span>
 
 
 

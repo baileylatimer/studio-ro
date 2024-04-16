@@ -7,7 +7,7 @@ class Timezone extends React.Component {
   }
   render(){
     return (
-        <span>San Diego {this.state.curTime}</span>
+        <span>Los Angeles {this.state.curTime}</span>
     );
   }
 }
