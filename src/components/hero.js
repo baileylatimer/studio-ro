@@ -1,6 +1,7 @@
 import React from "react"
 import BackgroundVideo from "./bg-video"
 import Video from "../videos/hero-vid.mp4"
+
 const Hero = props => (
   
 <div class="hero">
