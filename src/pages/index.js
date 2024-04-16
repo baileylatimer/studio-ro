@@ -19,7 +19,7 @@ const IndexPage = () => (
     <HomeAbout />
 <div className="flex flex-col lg:flex-row  lg:mt-20">
   <ProjectCardHome link='/showreel/heels' cover={Heels}  title="Heels" desc="01"/>
-  <ProjectCardHome link='/showreel/hip-hop' cover={Hhs4}  title="Hip Hop" desc="02"/>
+  <ProjectCardHome link='/showreel/commercial' cover={Hhs4}  title="Commercial" desc="02"/>
 </div>
 
 

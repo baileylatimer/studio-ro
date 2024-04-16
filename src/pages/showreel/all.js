@@ -34,6 +34,8 @@ import Hhs4 from "../../videos/hhs-04.mp4"
 import Hhs5 from "../../videos/hhs-05.mp4"
 import Hhs6 from "../../videos/hhs-06.mp4"
 import Hhs7 from "../../videos/hhs-07.mp4"
+import Womanizer from "../../videos/womanizer.mp4"
+import WomanizerShort from "../../videos/womanizer-short.mp4"
 
 const ShowreelPage = () => (
   <Layout>
@@ -43,14 +45,14 @@ const ShowreelPage = () => (
 <div className="flex w-full justify-center mb-8">
   <Btn link="/showreel/all" text="All" type=" mr-4"/>
   <Btn link="/showreel/heels" text="Heels" type="btn--ghost mr-4"/>
-  <Btn link="/showreel/hip-hop" text="Hip Hop"  type="btn--ghost "/>
+  <Btn link="/showreel/commercial" text="Commercial"  type="btn--ghost "/>
 </div>
 
 
 <div className="flex flex-col lg:flex-row ">
-
+<ProjectCard cover={WomanizerShort} video={Womanizer} videoTitle="BrittanySpears_Womanizer" title="Womanizer" desc="Brittany Spears" tag="hip-hop"/>
   <ProjectCard cover={Hhs4} video={Hh1} videoTitle="50-Cent_21-Questions" title="21 Questions" desc="50 Cent" tag="heels"/>
-  <ProjectCard cover={Hhs1} video={Hh6} videoTitle="BowWow_Let-Me-Hold-You" title="Let Me Hold You" desc="Bow Wow" tag="heels"/>
+  {/* <ProjectCard cover={Hhs1} video={Hh6} videoTitle="BowWow_Let-Me-Hold-You" title="Let Me Hold You" desc="Bow Wow" tag="heels"/> */}
 
 </div>
 <div className="flex flex-col lg:flex-row">

@@ -45,7 +45,7 @@ const ShowreelPage = () => (
 <div className="flex w-full justify-center mb-8">
   <Btn link="/showreel/all" text="All" type="btn--ghost mr-4"/>
   <Btn link="/showreel/heels" text="Heels" type=" mr-4"/>
-  <Btn link="/showreel/hip-hop" text="Hip Hop"  type="btn--ghost "/>
+  <Btn link="/showreel/commercial" text="Commercial"  type="btn--ghost "/>
 </div>
 
 <div className="flex flex-col lg:flex-row ">
