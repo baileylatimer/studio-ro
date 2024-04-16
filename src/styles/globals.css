@@ -11,12 +11,26 @@
   --text-md: 49px;
 }
 
+@media(max-width:1520px) {
+  :root {
+    --font-base: 16px;
+    --text-lg: 52px;
+    --text-md: 34px;
+  }
+}
+
+
 @media(max-width:1023px) {
   :root {
     --font-base: 13px;
     --text-lg: 42px;
     --text-md: 26px;
   }
+}
+@media(min-width:1023px) {
+.hidden-lg {
+  display: none
+}
 }
 
 body {
@@ -62,6 +76,12 @@ p {
 }
 .text-xxl {
   font-size: 282px;
+}
+
+@media(max-width:1520px) {
+  .text-xxl {
+    font-size: 200px;
+  }
 }
 @media(max-width:1023px) {
   .text-xxl {

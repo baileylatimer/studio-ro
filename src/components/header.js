@@ -19,7 +19,7 @@ function Header({ siteTitle }) {
 
   return (
     
-    <nav className="flex flex-wrap items-center justify-between py-3 lg:p-6 mx-d mb-6 bg-background">
+    <nav className="grid  grid-cols-3 py-3 lg:p-6 mx-d mb-6 bg-background">
       <div className="flex items-center text-white px-d ">
         <Link to={`/`} className=" mb-0">
         <svg className="nav-logo" width="242" height="31" viewBox="0 0 242 31" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -30,7 +30,12 @@ function Header({ siteTitle }) {
 </svg>
         </Link>
       </div>
-      <div className="block lg:hidden px-d">
+
+      <div className="lg:justify-end flex justify-center items-center hidden-lg ">
+      <LanguageSwitcher />
+      </div>
+
+      <div className="block lg:hidden px-d flex  justify-end">
         <button
           onClick={() => toggleExpansion(!isExpanded)}
           className="flex items-center px-3 py-2 "
@@ -44,24 +49,24 @@ function Header({ siteTitle }) {
       <div
         className={`${
           isExpanded ? `block` : `hidden`
-        } w-full nav-open block lg:flex lg:items-center lg:w-auto mt-4 pt-4 lg:mt-0 lg:pt-0 px-d `}
+        } w-full nav-open block lg:flex lg:justify-center lg:items-center lg:w-auto mt-4 pt-4 lg:mt-0 lg:pt-0 px-d col-span-3 lg:col-span-1 justify-center`}
       >
-        <div className="text-sm">
+        <div className="text-sm flex flex-col lg:flex-row items-center justify-center">
           <Link
             to={`/showreel/all`}
-            className="block mt-4 mr-4 lg:inline-block lg:mt-0 "
+            className="block mt-4 mr-4 lg:inline-block lg:mt-0 whitespace-nowrap "
           >
             {intl.formatMessage({ id: 'showreel' })}
           </Link>
           <Link
             to={`/about`}
-            className="block mt-4 mr-4 lg:inline-block lg:mt-0 "
+            className="block mt-4 mr-4 lg:inline-block lg:mt-0 whitespace-nowrap "
           >
             {intl.formatMessage({ id: 'about' })}
           </Link>
           <Link
             to={`/contact`}
-            className="block mt-4 mr-4 lg:inline-block lg:mt-0 "
+            className="block mt-4 mr-4 lg:inline-block lg:mt-0 whitespace-nowrap "
           >
             {intl.formatMessage({ id: 'contact' })}
           </Link>
@@ -70,11 +75,14 @@ function Header({ siteTitle }) {
           {/* Other header items */}
         </div>
       </div>
-      <div className="hidden lg:flex font-base">
-        <LanguageSwitcher />
+      <div className="lg:justify-end hidden lg:flex ">
+      <LanguageSwitcher />
+      </div>
+      {/* <div className="hidden lg:flex font-base">
+      
         <Timezone />
         <Timezone2 />
-      </div>
+      </div> */}
     </nav>
   )
 }
