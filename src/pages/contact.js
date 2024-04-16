@@ -14,8 +14,8 @@ const ContactPage = () => (
     <SEO title="Contact" />
     <PageHeader title="Contact"/>
 <div className="contact flex flex-col justify-center items-center py-24 lg:py-40">
-  <a tel="+1 (858) 776-8431">+1 (858) 776-8431</a>
-  <a mailto="hello@rocio.dance">hello@rocio.dance</a>
+  <a tel="+1 (323) 574-2422">+1 (323) 574-2422</a>
+  <a mailto="hi@rocio.dance">hi@rocio.dance</a>
 </div>
 
   </Layout>
