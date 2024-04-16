@@ -8,7 +8,7 @@ const LanguageSwitcher = () => {
   const currentLocale = intl.locale; // Current active language
 
   return (
-  <div className='flex lg:mr-6'>
+  <div className='flex lg:mr-6 justify-end lg:justify-center'>
     <button className='' onClick={() => changeLocale('en')}         style={{
         
           border: currentLocale === 'en' ? '2px solid black' : 'none', // Conditional styling
@@ -36,7 +36,7 @@ const LanguageSwitcher = () => {
 
           </button>
    
-          <button className='mr-4' onClick={() => changeLocale('es')}         style={{
+          <button className='' onClick={() => changeLocale('es')}         style={{
                 border: currentLocale === 'es' ? '2px solid black' : 'none', // Conditional styling
                 borderRadius: '800px',
                 height: '28px',
