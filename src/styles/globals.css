@@ -133,6 +133,11 @@ p {
   src: url("../fonts/NeueMontreal-Regular.otf");
 }
 
+@font-face {
+  font-family: "PPSupplyMono-Regular";
+  src: url("../fonts/PPSupplyMono-Regular.otf");
+}
+
 :root {
   --font-primary: "Neue Montreal", sans-serif;
 }
@@ -141,6 +146,11 @@ body, h1, h2, h3, h4, h5, h6, a, li, p, span {
   font-family: var(--font-primary);
   text-transform: uppercase;
   color: var(--color-contrast-higher)
+}
+
+.text-alt {
+  font-family: 'PPSupplyMono-Regular';
+  font-size: 14px;
 }
 
 /* BUTTONS

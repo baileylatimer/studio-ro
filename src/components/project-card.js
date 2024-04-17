@@ -4,11 +4,12 @@ import { StaticImage } from "gatsby-plugin-image"
 import BackgroundVideo from "./bg-video"
 import VideoModal from './video-modal';
 import CustomCursor from "./cursor";
+import { useIntl } from 'gatsby-plugin-intl';
 
-const ProjectCard  = ({ title, desc, cover, video, videoTitle, tag  }) => {
+const ProjectCard  = ({ title, desc, cover, video, videoTitle, tag, teacher, location  }) => {
+  const intl = useIntl();
   const [isOpen, setIsOpen] = useState(false);
   const [videoUrl, setVideoUrl] = useState('');
-  
 
 
   const openModal = (url) => {
@@ -47,6 +48,10 @@ const ProjectCard  = ({ title, desc, cover, video, videoTitle, tag  }) => {
         <div class="flex justify-between my-4 mx-4">
             <h1 class="">{title}</h1>
             <h1 className="lg:mt-0 color-contrast-medium"id="card-title-2">{desc}</h1>
+        </div>
+        <div class="flex justify-between my-4 px-4 pt-12">
+            <p className="text-alt">{intl.formatMessage({ id: 'teacher' })}: {teacher}</p>
+            <p className="lg:mt-0 color-contrast-medium text-alt"id="card-title-2">{intl.formatMessage({ id: 'location' })}: {location}</p>
         </div>
         </Link>
 
