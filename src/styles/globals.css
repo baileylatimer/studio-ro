@@ -684,7 +684,7 @@ video {
 .ReactModalPortal {
   z-index: 99 !important;
   display: block !important;
-  position: relative;
+  position: relative !important;
 }
 
 
