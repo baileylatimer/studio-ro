@@ -652,10 +652,11 @@ background-color: var(--color-contrast-higher);
 
 
 
-
-/* Inline #8 | https://rocio.dance/es/showreel/heels/ */
-
-
+.ReactModalPortal {
+  z-index: 99 !important;
+  display: block !important;
+  position: relative !important;
+}
 
 @media (min-width: 1023px) {
   .video-modal {
@@ -664,8 +665,6 @@ background-color: var(--color-contrast-higher);
 
 
 .video-modal {
-  /* max-width: calc(100vw - 80px); */
-  /* position: relative !important; */
   width: calc(100vw - 4em) !important;
   position: absolute !important;
   z-index: 999999000 !important;
@@ -676,16 +675,10 @@ background-color: var(--color-contrast-higher);
 
 video {
   width: 100% !important;
-  /* height: 100% !important; */
 }
 
-/* Inline #10 | https://rocio.dance/es/showreel/heels/ */
 
-.ReactModalPortal {
-  z-index: 99 !important;
-  display: block !important;
-  position: relative !important;
-}
+
 
 
 }
