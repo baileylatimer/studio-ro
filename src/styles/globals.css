@@ -585,6 +585,11 @@ background-color: var(--color-contrast-higher);
   backdrop-filter: blur(1rem);
   background-color: rgba(0,0,0,.6) !important;
 }
+@media(min-width:1023px) {
+  .video-modal {
+max-height: calc(100vh - 230px);
+  }
+}
 
 .ReactModal__Overlay--after-open {
 
