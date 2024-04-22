@@ -52,7 +52,7 @@ const ShowreelPage = () => {
 <div className="flex flex-col lg:flex-row ">
 
 <ProjectCard cover={Heels} video={Video2} videoTitle="Beyonce_Im-That-Girl" title="I'm That Girl" desc="Beyonce" tag="heels" teacher="Hector Kramer" location="Limitless Studio"/>
-  <ProjectCard cover={Hhs1} video={Hh6} videoTitle="BowWow_Let-Me-Hold-You" title="Let Me Hold You" desc="Bow Wow" tag="heels"  teacher="Elizabeth Haldo" location="Studio FX"/>
+  <ProjectCard cover={Hhs1} video={Hh6} videoTitle="BowWow_Let-Me-Hold-You" title="Let Me Hold You" desc="Bow Wow" tag="heels"  teacher="Dylan Banares" location="Studio FX"/>
   {/* <ProjectCard cover={Hhs7} video={Hh7} videoTitle="Missy-Elliot_JOY" title="JOY" desc="Missy Elliot" tag="heels"/> */}
 </div>
 <div className="flex flex-col lg:flex-row ">
