@@ -42,6 +42,18 @@ module.exports = {
         redirect: true,
       },
     },
+
+{
+  resolve: `gatsby-plugin-purgecss`,
+  options: {
+    printRejected: true, // Print removed selectors and processed file names
+    develop: false, // Enable while developing
+    tailwind: true, // Enable Tailwind mode
+    ignore: ['react-modal'], // Ignore files/folders
+    safelist: ['ReactModalPortal'] // Whitelist ReactModalPortal class
+  }
+},
+
     {
       resolve: `gatsby-plugin-google-analytics`,
       options: {
