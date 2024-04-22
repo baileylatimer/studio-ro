@@ -95,13 +95,13 @@ p {
 }
 
 .mx-d {
-  margin-left: 40px;
-  margin-right: 40px;
+  margin-left: 2em;
+  margin-right: 2em;
 }
 @media(max-width:1023px) {
   .mx-d {
-    margin-left: 20px;
-    margin-right: 20px;
+    margin-left: 1em;
+    margin-right: 1em;
   } 
 }
 
@@ -191,7 +191,7 @@ nav {
   -moz-border-radius: 16px;
   -ms-border-radius: 16px;
   -o-border-radius: 16px;
-  margin: 20px 40px;
+  margin:  2em;
   position: fixed;
   width: calc(100vw - 80px);
   z-index: 99;
@@ -574,7 +574,7 @@ background-color: var(--color-contrast-higher);
   position: relative !important;
   /*margin-top: 300px;
   */padding: 0 !important;
-  max-width: calc(100vw - 80px);
+  /* max-width: calc(100vw - 80px); */
   inset: 0 !important;
   border-radius: 20px !important;
   -webkit-border-radius: 20px !important;
@@ -587,7 +587,7 @@ background-color: var(--color-contrast-higher);
 }
 @media(min-width:1023px) {
   .video-modal {
-max-height: calc(100vh - 230px);
+/* max-height: calc(100vh - 230px); */
   }
 }
 
@@ -650,6 +650,45 @@ max-height: calc(100vh - 230px);
 }
 
 
+
+
+
+/* Inline #8 | https://rocio.dance/es/showreel/heels/ */
+
+
+
+@media (min-width: 1023px) {
+  .video-modal {
+    /* max-height: calc(100vh - 230px); */
+  }
+
+
+.video-modal {
+  /* max-width: calc(100vw - 80px); */
+  /* position: relative !important; */
+  width: calc(100vw - 4em) !important;
+  position: absolute !important;
+  z-index: 999999000 !important;
+  left: 2em !important;
+  top: 2em !important;
+  bottom: 2em !important;
+}
+
+video {
+  width: 100% !important;
+  /* height: 100% !important; */
+}
+
+/* Inline #10 | https://rocio.dance/es/showreel/heels/ */
+
+.ReactModalPortal {
+  z-index: 99 !important;
+  display: block !important;
+  position: relative;
+}
+
+
+}
 
 /* CURSOR 
 ========== */
